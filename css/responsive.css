@@ -1,0 +1,436 @@
+:root{
+    /** FONTS STYLE **/
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: secondaryFontName;
+    /** COLOR STYLE **/
+
+    --blue-dark: #242f51;
+    --yellow: #feaa25;
+    --blue: #2500f9;
+    --gray: #616368;
+    --red-light: #f55767;
+    --blue-light: #2563ff;
+    --green-light: #40975f;
+    --black: #0a0a0a;
+    --white: #fff;
+    --footer-bg: #09142e;
+    /* EXTRA */
+    --color-1: #ffecef;
+    --color-2: #eaf9ff;
+    --color-3: #fff6d3;
+    --color-4: #e4ffee;
+    --color-5: #f4f4ff;
+    --color-6: #fdeee4;
+
+    --dark: #2d2e2f;
+    --day: #fff;
+    
+}
+
+
+/* Responsive mediaQuery */
+
+@media (max-width: 992px) {
+
+    html{
+        font-size: 55.5%;
+    }
+
+    nav .container .toggle{
+        display: block;
+        cursor: pointer;
+    }
+
+    nav .container .toggle .fa-bars{
+        font-size: 2.5rem;
+    }
+
+    nav .container .navbar-menubar .nav-bar{
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        z-index: 2222;
+        background-color: var(--white);
+        height: 0;
+        overflow: hidden;
+        transition: all .3s !important;
+    }
+
+    nav .container .navbar-menubar .nav-bar.show-nav-bar{
+        height: 38.5rem;
+        transition: all .3s !important;
+        box-shadow:-1000px 1000px 0 1000px rgba(0, 0, 0, 0.377) !important;
+    }
+
+    nav .container .navbar-menubar .nav-bar .nav-container{
+        flex-direction: column;
+        padding: 5rem 0;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+    }
+
+    nav .container .navbar-menubar .nav-bar .nav-container .navbar-link{
+        margin: 1rem 0;
+        font-size: 2.5rem;
+        display: block;
+    }
+
+    nav .container .navbar-menubar .navs-btn{
+        margin-right: 2rem;
+    }
+
+    header{
+        height: 100vh;
+    }
+
+    header .row{
+        height: 80vh;
+        margin: 0 !important;
+    }
+
+    header .row .header-left{
+        text-align: center;
+    }
+
+    header .row .header-left .tags{
+        margin: auto !important;
+    }
+
+    header .row .header-left .btns-group{
+        justify-content: center;
+    }
+
+    .features .row .bd-image{
+        min-width: 60%;
+        height: auto;
+        left: 0px;
+        right: 0px;
+    }
+
+    .features .row .bd-image img.mobile1{
+        min-width: 100%;
+        height: auto;
+        left: 0px;
+        right: 0px;
+        display: block;
+        margin: auto;
+    }
+
+    .features .row .right-side .title-box p,
+    .features .row .right-side .content-box .box{
+        width: 100%;
+    }
+
+    .features .row .right-side {
+        margin-left: 0;
+    }
+
+    .features .row .right-side .title-box h2, .features .row .right-side .title-box h2 span {
+        text-align: center;
+    }
+
+    .features .row .right-side .title-box h2 span{
+        display: inline-block;
+    }
+
+    .features .row .right-side .title-box p {
+        text-align: center;
+    }
+
+    .features .row .right-side .content-box .box {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 3.4rem;
+    }
+
+    .features .row .right-side .content-box .box .inner{
+        margin: 0;
+        padding: 3.6rem;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .features .row .right-side .content-box .box .content{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .jackpots .row .jack-title h3,
+    .jackpots .row .jack-title h3 span{
+        text-align: center;
+    }
+
+    .jackpots .row .jack-title {
+        border-right: none;
+        margin: 0;
+    }
+
+    .jackpots .row .jack-paragraph {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .supply .row .card{
+        padding-right: 0;
+        padding-bottom: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .supply .row .card .inner {
+        margin-right: 0;
+    }
+
+    .supply {
+        margin-top: 5rem;
+    }
+
+    .testimonial .prev-next {
+        margin-top: -65px;
+    }
+
+    .testimonial .prev-next::before {
+        top: 12px;
+        right: 62px;
+    }
+
+    .downloads .row .box h1 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .downloads .row .box p {
+        text-align: center;
+    }
+
+    .downloads .row .box .img-box {
+        margin: auto;
+        text-align: center;
+    }
+
+    footer{
+        margin-top: 3rem;
+    }
+
+    
+
+
+
+
+
+
+
+
+}
+
+
+
+@media (max-width: 768px) {
+    
+
+    .section-b{
+        padding: 5rem 0 0 0;
+    }
+
+    .section-b .row .content-box{
+        margin-left: 0rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .section-b .row .content-box h3{
+        width: 100%;
+    }
+
+    .section-b .row .content-box a{
+        text-align: center;
+        margin: auto;
+    }
+
+    .section-c .row .card .ico{
+        margin-right: 0;
+        padding: 5rem;
+    }
+
+    .section-d .hero-bg,
+    .col-non{
+        display: none;
+    }
+
+    .section-d .heading{
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .section-d .row{
+        margin-top: 2rem;
+    }
+
+    .section-d .heading h1{
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .section-d .row .row .card{
+        max-width: 95%;
+        width: 100%;
+        margin: 0rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .section-d .row .row .card .ico{
+        margin-right: 0;
+        margin: auto;
+        padding: 5rem;
+    }
+
+    .section-d .row .row .card .inner h3{
+        margin-top: 1.5rem;
+    }
+
+    .section-d .row .row .btns-width{
+        margin: auto;
+    }
+
+    .testimonial .prev-next {
+        margin-top: -60px;
+    }
+
+    .pricing .card-box .monthly, .pricing .card-box .annualy {
+        flex-wrap: wrap;
+    }
+
+    .testimonial .box .heading h1 {
+        max-width: 90%;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .testimonial .box .heading p {
+        text-align: center;
+    }
+
+    .testimonial .rat {
+        text-align: center;
+    }
+
+    .testimonial .main-box h3 {
+        text-align: center;
+    }
+
+    .testimonial .main-box p {
+        text-align: center;
+    }
+
+    .pricing .card-box .card {
+        margin: 4rem 2rem 2rem;
+    }
+
+    .testimonial .prev-next::before {
+        right: 61px;
+    }
+
+    .accordion .box p{
+        color: var(--gray);
+        width: 99%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+
+    html{
+        font-size: 50.2%;
+    }
+
+    .container{
+        padding: 0 1.5rem !important;
+    }
+
+    nav .container .navbar-menubar .nav-bar{
+        top: 55px;
+    }
+
+    .features .row .right-side .content-box .box .inner{
+        margin: 0;
+        padding: 5rem;
+    }
+
+    .section-c .row{
+        margin-top: 4rem;
+    }
+
+    .section-c .row .card{
+        width: 90%;
+    }
+
+    .section-c .row .card .ico{
+        margin-right: 0;
+        padding: 6rem;
+    }
+
+    .testimonial .prev-next {
+        margin-top: -50px;
+    }
+
+    .pricing .card-box .monthly, .pricing .card-box .annualy {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .testimonial .prev-next::before {
+        right: 54px;
+        top: 8px;
+    }
+
+    
+
+
+
+
+}
+
+@media (max-width: 358px) {
+
+    html{
+        font-size: 40.2%;
+    }
+
+    .container{
+        padding: 0 1rem !important;
+    }
+
+    nav .container .navbar-menubar .nav-bar{
+        top: 45px;
+    }
+
+    header .row .header-left h1, header .row .header-left h1 span{
+        color: var(--blue-dark);
+        font-size: 5.5rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        text-transform: none;
+    }
+
+    .section-c .row .card .ico{
+        padding: 7rem;
+    }
+
+    .testimonial .prev-next {
+        margin-top: -45px;
+    }
+}
